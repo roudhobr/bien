@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial'; /* font judul */
+    margin: 0;
+    padding: 0;
+    color: #000000; 
+}
+header {
+    background-color: #929AAB ; /* warna background judul dibelakang logo */
+    color: rgb(0, 0, 0);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.logo-image { /* ukuran logo */
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
+.logo-text {
+    font-family: 'Arial';
+    font-size: 1.5rem; /* ukuran atas judul bien clothes */
+    font-weight: bold;
+}
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 1rem;
+}
+nav a:hover {
+    color: #007bff;
+}
+.hero {
+    background-size: cover;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000000; /* warna font look cool */
+}
+.hero h1 {
+    font-family: 'Night Mango';
+    font-size: 3rem;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3rem;
+}
+.product {
+    width: 250px;
+    margin: 1rem;
+    text-align: center;
+}
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+footer {
+    background-color: #393E46; /* bagian bawah website footer */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+/* New styles for image slider */
+.slider-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+.slider-image {
+    display: none;
+    width: 100%;
+}
+.active {
+    display: block;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(255, 255, 255); /* panah slide */
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8); /* warna kotak slide */
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.5);
+}
